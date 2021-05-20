@@ -12947,13 +12947,8 @@ ul.typeahead-list  > li > a.pull-right {
 /*# sourceMappingURL=style.min.css.map */
     </style>
 <style type="text/css">
-    pre { line-height: 125%; }
-td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
-span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
-td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
-span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
-.highlight .hll { background-color: #ffffcc }
-.highlight { background: #f8f8f8; }
+    .highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
@@ -13108,7 +13103,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Make sure that we use SageMaker 1.x</span>
@@ -13129,24 +13124,42 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Requirement already satisfied: sagemaker==1.72.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (1.72.0)
-Requirement already satisfied: protobuf&gt;=3.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (3.15.2)
-Requirement already satisfied: importlib-metadata&gt;=1.4.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (3.7.0)
-Requirement already satisfied: smdebug-rulesconfig==0.1.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (0.1.4)
-Requirement already satisfied: protobuf3-to-dict&gt;=0.1.5 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (0.1.5)
-Requirement already satisfied: numpy&gt;=1.9.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (1.19.5)
-Requirement already satisfied: scipy&gt;=0.19.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (1.5.3)
+<pre>Collecting sagemaker==1.72.0
+  Downloading sagemaker-1.72.0.tar.gz (297 kB)
+     |████████████████████████████████| 297 kB 15.8 MB/s eta 0:00:01
 Requirement already satisfied: boto3&gt;=1.14.12 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (1.17.55)
+Requirement already satisfied: numpy&gt;=1.9.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (1.19.5)
+Requirement already satisfied: protobuf&gt;=3.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (3.15.2)
+Requirement already satisfied: scipy&gt;=0.19.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (1.5.3)
+Requirement already satisfied: protobuf3-to-dict&gt;=0.1.5 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (0.1.5)
+Collecting smdebug-rulesconfig==0.1.4
+  Downloading smdebug_rulesconfig-0.1.4-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: importlib-metadata&gt;=1.4.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (3.7.0)
 Requirement already satisfied: packaging&gt;=20.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from sagemaker==1.72.0) (20.9)
 Requirement already satisfied: s3transfer&lt;0.5.0,&gt;=0.4.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from boto3&gt;=1.14.12-&gt;sagemaker==1.72.0) (0.4.1)
-Requirement already satisfied: botocore&lt;1.21.0,&gt;=1.20.55 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from boto3&gt;=1.14.12-&gt;sagemaker==1.72.0) (1.20.55)
 Requirement already satisfied: jmespath&lt;1.0.0,&gt;=0.7.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from boto3&gt;=1.14.12-&gt;sagemaker==1.72.0) (0.10.0)
+Requirement already satisfied: botocore&lt;1.21.0,&gt;=1.20.55 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from boto3&gt;=1.14.12-&gt;sagemaker==1.72.0) (1.20.55)
 Requirement already satisfied: python-dateutil&lt;3.0.0,&gt;=2.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from botocore&lt;1.21.0,&gt;=1.20.55-&gt;boto3&gt;=1.14.12-&gt;sagemaker==1.72.0) (2.8.1)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.25.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from botocore&lt;1.21.0,&gt;=1.20.55-&gt;boto3&gt;=1.14.12-&gt;sagemaker==1.72.0) (1.26.4)
 Requirement already satisfied: typing-extensions&gt;=3.6.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from importlib-metadata&gt;=1.4.0-&gt;sagemaker==1.72.0) (3.7.4.3)
 Requirement already satisfied: zipp&gt;=0.5 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from importlib-metadata&gt;=1.4.0-&gt;sagemaker==1.72.0) (3.4.0)
 Requirement already satisfied: pyparsing&gt;=2.0.2 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from packaging&gt;=20.0-&gt;sagemaker==1.72.0) (2.4.7)
 Requirement already satisfied: six&gt;=1.9 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from protobuf&gt;=3.1-&gt;sagemaker==1.72.0) (1.15.0)
+Building wheels for collected packages: sagemaker
+  Building wheel for sagemaker (setup.py) ... done
+  Created wheel for sagemaker: filename=sagemaker-1.72.0-py2.py3-none-any.whl size=386358 sha256=e73ae65c2bad6346d29a5f746ee89b050f92a55be251fb2aa20ec8323a18f722
+  Stored in directory: /home/ec2-user/.cache/pip/wheels/c3/58/70/85faf4437568bfaa4c419937569ba1fe54d44c5db42406bbd7
+Successfully built sagemaker
+Installing collected packages: smdebug-rulesconfig, sagemaker
+  Attempting uninstall: smdebug-rulesconfig
+    Found existing installation: smdebug-rulesconfig 1.0.1
+    Uninstalling smdebug-rulesconfig-1.0.1:
+      Successfully uninstalled smdebug-rulesconfig-1.0.1
+  Attempting uninstall: sagemaker
+    Found existing installation: sagemaker 2.38.0
+    Uninstalling sagemaker-2.38.0:
+      Successfully uninstalled sagemaker-2.38.0
+Successfully installed sagemaker-1.72.0 smdebug-rulesconfig-0.1.4
 </pre>
 </div>
 </div>
@@ -13189,17 +13202,16 @@ Requirement already satisfied: six&gt;=1.9 in /home/ec2-user/anaconda3/envs/pyto
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>mkdir: cannot create directory ‘../data’: File exists
---2021-04-29 14:39:48--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+<pre>--2021-04-30 10:40:28--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
 Resolving ai.stanford.edu (ai.stanford.edu)... 171.64.68.10
 Connecting to ai.stanford.edu (ai.stanford.edu)|171.64.68.10|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 84125825 (80M) [application/x-gzip]
 Saving to: ‘../data/aclImdb_v1.tar.gz’
 
-../data/aclImdb_v1. 100%[===================&gt;]  80.23M  23.7MB/s    in 4.1s    
+../data/aclImdb_v1. 100%[===================&gt;]  80.23M  24.9MB/s    in 3.8s    
 
-2021-04-29 14:39:53 (19.5 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
+2021-04-30 10:40:32 (21.0 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
 
 </pre>
 </div>
@@ -13219,7 +13231,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13259,7 +13271,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">read_imdb_data</span><span class="p">()</span>
@@ -13301,7 +13313,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="kn">import</span> <span class="n">shuffle</span>
@@ -13330,7 +13342,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">test_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">test_y</span> <span class="o">=</span> <span class="n">prepare_imdb_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
@@ -13411,7 +13423,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -13673,7 +13685,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
@@ -13725,7 +13737,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Preprocess data</span>
@@ -13776,7 +13788,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13817,7 +13829,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">word_dict</span> <span class="o">=</span> <span class="n">build_dict</span><span class="p">(</span><span class="n">train_X</span><span class="p">)</span>
@@ -13888,7 +13900,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_dir</span> <span class="o">=</span> <span class="s1">&#39;../data/pytorch&#39;</span> <span class="c1"># The folder we will use for storing data</span>
@@ -13903,7 +13915,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s1">&#39;word_dict.pkl&#39;</span><span class="p">),</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -13925,7 +13937,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert_and_pad</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">sentence</span><span class="p">,</span> <span class="n">pad</span><span class="o">=</span><span class="mi">500</span><span class="p">):</span>
@@ -13961,7 +13973,7 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_X_len</span> <span class="o">=</span> <span class="n">convert_and_pad_data</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">train_X</span><span class="p">)</span>
@@ -14061,7 +14073,7 @@ Length of the first review: 62
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Besides more execution time and losing information by truncating the review i do not see any problem in this.</p>
+<p><strong>Answer:</strong> Besides more execution time and losing information by truncating the review, another issue might be data leakage in case we share information between train and test set. In our case because word_dict is generated only from training set there won't be any data leakage issue.</p>
 
 </div>
 </div>
@@ -14077,7 +14089,7 @@ Length of the first review: 62
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -14101,7 +14113,7 @@ Length of the first review: 62
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sagemaker</span>
@@ -14121,7 +14133,7 @@ Length of the first review: 62
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_data</span> <span class="o">=</span> <span class="n">sagemaker_session</span><span class="o">.</span><span class="n">upload_data</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">data_dir</span><span class="p">,</span> <span class="n">bucket</span><span class="o">=</span><span class="n">bucket</span><span class="p">,</span> <span class="n">key_prefix</span><span class="o">=</span><span class="n">prefix</span><span class="p">)</span>
@@ -14157,7 +14169,7 @@ Length of the first review: 62
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pygmentize train/model.py
@@ -14228,7 +14240,7 @@ Length of the first review: 62
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
@@ -14364,7 +14376,7 @@ Epoch: 5, BCELoss: 0.647269093990326
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sagemaker.pytorch</span> <span class="kn">import</span> <span class="n">PyTorch</span>
@@ -14378,7 +14390,7 @@ Epoch: 5, BCELoss: 0.647269093990326
                     <span class="n">train_instance_type</span><span class="o">=</span><span class="s1">&#39;ml.p2.xlarge&#39;</span><span class="p">,</span>
                     <span class="n">hyperparameters</span><span class="o">=</span><span class="p">{</span>
                         <span class="s1">&#39;epochs&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-                        <span class="s1">&#39;hidden_dim&#39;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+                        <span class="s1">&#39;hidden_dim&#39;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
                     <span class="p">})</span>
 </pre></div>
 
@@ -14389,7 +14401,7 @@ Epoch: 5, BCELoss: 0.647269093990326
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">({</span><span class="s1">&#39;training&#39;</span><span class="p">:</span> <span class="n">input_data</span><span class="p">})</span>
@@ -14422,25 +14434,24 @@ Epoch: 5, BCELoss: 0.647269093990326
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2021-04-29 17:37:27 Starting - Starting the training job...
-2021-04-29 17:37:29 Starting - Launching requested ML instances.........
-2021-04-29 17:39:02 Starting - Preparing the instances for training.........
-2021-04-29 17:40:42 Downloading - Downloading input data...
-2021-04-29 17:41:09 Training - Downloading the training image...
-2021-04-29 17:41:50 Training - Training image download completed. Training in progress.<span class="ansi-blue-fg">bash: cannot set terminal process group (-1): Inappropriate ioctl for device</span>
+<pre>2021-05-01 09:11:31 Starting - Starting the training job...
+2021-05-01 09:11:33 Starting - Launching requested ML instances.........
+2021-05-01 09:13:02 Starting - Preparing the instances for training.........
+2021-05-01 09:14:49 Downloading - Downloading input data......
+2021-05-01 09:15:56 Training - Training image download completed. Training in progress.<span class="ansi-blue-fg">bash: cannot set terminal process group (-1): Inappropriate ioctl for device</span>
 <span class="ansi-blue-fg">bash: no job control in this shell</span>
-<span class="ansi-blue-fg">2021-04-29 17:41:51,178 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training</span>
-<span class="ansi-blue-fg">2021-04-29 17:41:51,203 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.</span>
-<span class="ansi-blue-fg">2021-04-29 17:41:51,207 sagemaker_pytorch_container.training INFO     Invoking user training script.</span>
-<span class="ansi-blue-fg">2021-04-29 17:41:51,498 sagemaker-containers INFO     Module train does not provide a setup.py. </span>
+<span class="ansi-blue-fg">2021-05-01 09:15:57,506 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training</span>
+<span class="ansi-blue-fg">2021-05-01 09:15:57,531 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.</span>
+<span class="ansi-blue-fg">2021-05-01 09:16:03,750 sagemaker_pytorch_container.training INFO     Invoking user training script.</span>
+<span class="ansi-blue-fg">2021-05-01 09:16:11,319 sagemaker-containers INFO     Module train does not provide a setup.py. </span>
 <span class="ansi-blue-fg">Generating setup.py</span>
-<span class="ansi-blue-fg">2021-04-29 17:41:51,498 sagemaker-containers INFO     Generating setup.cfg</span>
-<span class="ansi-blue-fg">2021-04-29 17:41:51,499 sagemaker-containers INFO     Generating MANIFEST.in</span>
-<span class="ansi-blue-fg">2021-04-29 17:41:51,499 sagemaker-containers INFO     Installing module with the following command:</span>
+<span class="ansi-blue-fg">2021-05-01 09:16:11,320 sagemaker-containers INFO     Generating setup.cfg</span>
+<span class="ansi-blue-fg">2021-05-01 09:16:11,320 sagemaker-containers INFO     Generating MANIFEST.in</span>
+<span class="ansi-blue-fg">2021-05-01 09:16:11,320 sagemaker-containers INFO     Installing module with the following command:</span>
 <span class="ansi-blue-fg">/usr/bin/python -m pip install -U . -r requirements.txt</span>
 <span class="ansi-blue-fg">Processing /opt/ml/code</span>
-<span class="ansi-blue-fg">Collecting pandas (from -r requirements.txt (line 1))
-  Downloading https://files.pythonhosted.org/packages/74/24/0cdbf8907e1e3bc5a8da03345c23cbed7044330bb8f73bb12e711a640a00/pandas-0.24.2-cp35-cp35m-manylinux1_x86_64.whl (10.0MB)</span>
+<span class="ansi-blue-fg">Collecting pandas (from -r requirements.txt (line 1))</span>
+<span class="ansi-blue-fg">  Downloading https://files.pythonhosted.org/packages/74/24/0cdbf8907e1e3bc5a8da03345c23cbed7044330bb8f73bb12e711a640a00/pandas-0.24.2-cp35-cp35m-manylinux1_x86_64.whl (10.0MB)</span>
 <span class="ansi-blue-fg">Collecting numpy (from -r requirements.txt (line 2))
   Downloading https://files.pythonhosted.org/packages/b5/36/88723426b4ff576809fec7d73594fe17a35c27f8d01f93637637a29ae25b/numpy-1.18.5-cp35-cp35m-manylinux1_x86_64.whl (19.9MB)</span>
 <span class="ansi-blue-fg">Collecting nltk (from -r requirements.txt (line 3))
@@ -14452,13 +14463,13 @@ Epoch: 5, BCELoss: 0.647269093990326
 <span class="ansi-blue-fg">Requirement already satisfied, skipping upgrade: python-dateutil&gt;=2.5.0 in /usr/local/lib/python3.5/dist-packages (from pandas-&gt;-r requirements.txt (line 1)) (2.7.5)</span>
 <span class="ansi-blue-fg">Collecting pytz&gt;=2011k (from pandas-&gt;-r requirements.txt (line 1))</span>
 <span class="ansi-blue-fg">  Downloading https://files.pythonhosted.org/packages/70/94/784178ca5dd892a98f113cdd923372024dc04b8d40abe77ca76b5fb90ca6/pytz-2021.1-py2.py3-none-any.whl (510kB)</span>
-<span class="ansi-blue-fg">Collecting joblib (from nltk-&gt;-r requirements.txt (line 3))
-  Downloading https://files.pythonhosted.org/packages/28/5c/cf6a2b65a321c4a209efcdf64c2689efae2cb62661f8f6f4bb28547cf1bf/joblib-0.14.1-py2.py3-none-any.whl (294kB)</span>
-<span class="ansi-blue-fg">Requirement already satisfied, skipping upgrade: click in /usr/local/lib/python3.5/dist-packages (from nltk-&gt;-r requirements.txt (line 3)) (7.0)</span>
+<span class="ansi-blue-fg">Collecting regex (from nltk-&gt;-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/38/3f/4c42a98c9ad7d08c16e7d23b2194a0e4f3b2914662da8bc88986e4e6de1f/regex-2021.4.4.tar.gz (693kB)</span>
 <span class="ansi-blue-fg">Collecting tqdm (from nltk-&gt;-r requirements.txt (line 3))
   Downloading https://files.pythonhosted.org/packages/72/8a/34efae5cf9924328a8f34eeb2fdaae14c011462d9f0e3fcded48e1266d1c/tqdm-4.60.0-py2.py3-none-any.whl (75kB)</span>
-<span class="ansi-blue-fg">Collecting regex (from nltk-&gt;-r requirements.txt (line 3))</span>
-<span class="ansi-blue-fg">  Downloading https://files.pythonhosted.org/packages/38/3f/4c42a98c9ad7d08c16e7d23b2194a0e4f3b2914662da8bc88986e4e6de1f/regex-2021.4.4.tar.gz (693kB)</span>
+<span class="ansi-blue-fg">Requirement already satisfied, skipping upgrade: click in /usr/local/lib/python3.5/dist-packages (from nltk-&gt;-r requirements.txt (line 3)) (7.0)</span>
+<span class="ansi-blue-fg">Collecting joblib (from nltk-&gt;-r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/28/5c/cf6a2b65a321c4a209efcdf64c2689efae2cb62661f8f6f4bb28547cf1bf/joblib-0.14.1-py2.py3-none-any.whl (294kB)</span>
 <span class="ansi-blue-fg">Collecting soupsieve&gt;1.2; python_version &gt;= &#34;3.0&#34; (from beautifulsoup4-&gt;-r requirements.txt (line 4))
   Downloading https://files.pythonhosted.org/packages/02/fb/1c65691a9aeb7bd6ac2aa505b84cb8b49ac29c976411c6ab3659425e045f/soupsieve-2.1-py3-none-any.whl</span>
 <span class="ansi-blue-fg">Collecting webencodings (from html5lib-&gt;-r requirements.txt (line 5))
@@ -14467,120 +14478,120 @@ Epoch: 5, BCELoss: 0.647269093990326
 <span class="ansi-blue-fg">Building wheels for collected packages: train, regex
   Running setup.py bdist_wheel for train: started</span>
 <span class="ansi-blue-fg">  Running setup.py bdist_wheel for train: finished with status &#39;done&#39;
-  Stored in directory: /tmp/pip-ephem-wheel-cache-2kx8uj0e/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3
+  Stored in directory: /tmp/pip-ephem-wheel-cache-e89dcneq/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3
   Running setup.py bdist_wheel for regex: started</span>
 <span class="ansi-blue-fg">  Running setup.py bdist_wheel for regex: finished with status &#39;done&#39;
   Stored in directory: /root/.cache/pip/wheels/c9/05/a8/b85fa0bd7850b99f9b4f106972975f2e3c46412e12f9949b58</span>
 <span class="ansi-blue-fg">Successfully built train regex</span>
-<span class="ansi-blue-fg">Installing collected packages: pytz, numpy, pandas, joblib, tqdm, regex, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train</span>
-<span class="ansi-blue-fg">  Found existing installation: numpy 1.15.4
-    Uninstalling numpy-1.15.4:
+<span class="ansi-blue-fg">Installing collected packages: pytz, numpy, pandas, regex, tqdm, joblib, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train
+  Found existing installation: numpy 1.15.4</span>
+<span class="ansi-blue-fg">    Uninstalling numpy-1.15.4:
       Successfully uninstalled numpy-1.15.4</span>
 <span class="ansi-blue-fg">Successfully installed beautifulsoup4-4.9.3 html5lib-1.1 joblib-0.14.1 nltk-3.6.2 numpy-1.18.5 pandas-0.24.2 pytz-2021.1 regex-2021.4.4 soupsieve-2.1 tqdm-4.60.0 train-1.0.0 webencodings-0.5.1</span>
 <span class="ansi-blue-fg">You are using pip version 18.1, however version 20.3.4 is available.</span>
 <span class="ansi-blue-fg">You should consider upgrading via the &#39;pip install --upgrade pip&#39; command.</span>
-<span class="ansi-blue-fg">2021-04-29 17:42:15,972 sagemaker-containers INFO     Invoking user script
+<span class="ansi-blue-fg">2021-05-01 09:16:33,123 sagemaker-containers INFO     Invoking user script
 </span>
 <span class="ansi-blue-fg">Training Env:
 </span>
 <span class="ansi-blue-fg">{
+    &#34;module_name&#34;: &#34;train&#34;,
+    &#34;num_gpus&#34;: 1,
+    &#34;output_data_dir&#34;: &#34;/opt/ml/output/data&#34;,
+    &#34;num_cpus&#34;: 4,
     &#34;input_data_config&#34;: {
         &#34;training&#34;: {
-            &#34;S3DistributionType&#34;: &#34;FullyReplicated&#34;,
             &#34;RecordWrapperType&#34;: &#34;None&#34;,
-            &#34;TrainingInputMode&#34;: &#34;File&#34;
+            &#34;TrainingInputMode&#34;: &#34;File&#34;,
+            &#34;S3DistributionType&#34;: &#34;FullyReplicated&#34;
         }
     },
     &#34;input_config_dir&#34;: &#34;/opt/ml/input/config&#34;,
-    &#34;output_data_dir&#34;: &#34;/opt/ml/output/data&#34;,
-    &#34;hosts&#34;: [
-        &#34;algo-1&#34;
-    ],
-    &#34;num_cpus&#34;: 4,
-    &#34;framework_module&#34;: &#34;sagemaker_pytorch_container.training:main&#34;,
-    &#34;channel_input_dirs&#34;: {
-        &#34;training&#34;: &#34;/opt/ml/input/data/training&#34;
-    },
-    &#34;module_name&#34;: &#34;train&#34;,
     &#34;output_intermediate_dir&#34;: &#34;/opt/ml/output/intermediate&#34;,
+    &#34;additional_framework_parameters&#34;: {},
+    &#34;input_dir&#34;: &#34;/opt/ml/input&#34;,
+    &#34;model_dir&#34;: &#34;/opt/ml/model&#34;,
     &#34;hyperparameters&#34;: {
-        &#34;hidden_dim&#34;: 500,
-        &#34;epochs&#34;: 10
+        &#34;epochs&#34;: 10,
+        &#34;hidden_dim&#34;: 200
     },
+    &#34;current_host&#34;: &#34;algo-1&#34;,
+    &#34;module_dir&#34;: &#34;s3://sagemaker-us-east-1-421776997111/sagemaker-pytorch-2021-05-01-09-11-31-017/source/sourcedir.tar.gz&#34;,
     &#34;user_entry_point&#34;: &#34;train.py&#34;,
     &#34;network_interface_name&#34;: &#34;eth0&#34;,
-    &#34;model_dir&#34;: &#34;/opt/ml/model&#34;,
-    &#34;additional_framework_parameters&#34;: {},
-    &#34;job_name&#34;: &#34;sagemaker-pytorch-2021-04-29-17-37-26-653&#34;,
-    &#34;input_dir&#34;: &#34;/opt/ml/input&#34;,
-    &#34;module_dir&#34;: &#34;s3://sagemaker-us-east-1-421776997111/sagemaker-pytorch-2021-04-29-17-37-26-653/source/sourcedir.tar.gz&#34;,
-    &#34;output_dir&#34;: &#34;/opt/ml/output&#34;,
     &#34;resource_config&#34;: {
+        &#34;current_host&#34;: &#34;algo-1&#34;,
         &#34;hosts&#34;: [
             &#34;algo-1&#34;
         ],
-        &#34;network_interface_name&#34;: &#34;eth0&#34;,
-        &#34;current_host&#34;: &#34;algo-1&#34;
+        &#34;network_interface_name&#34;: &#34;eth0&#34;
     },
+    &#34;hosts&#34;: [
+        &#34;algo-1&#34;
+    ],
+    &#34;job_name&#34;: &#34;sagemaker-pytorch-2021-05-01-09-11-31-017&#34;,
+    &#34;output_dir&#34;: &#34;/opt/ml/output&#34;,
+    &#34;framework_module&#34;: &#34;sagemaker_pytorch_container.training:main&#34;,
     &#34;log_level&#34;: 20,
-    &#34;current_host&#34;: &#34;algo-1&#34;,
-    &#34;num_gpus&#34;: 1</span>
+    &#34;channel_input_dirs&#34;: {
+        &#34;training&#34;: &#34;/opt/ml/input/data/training&#34;
+    }</span>
 <span class="ansi-blue-fg">}
 </span>
 <span class="ansi-blue-fg">Environment variables:
 </span>
-<span class="ansi-blue-fg">SM_CHANNEL_TRAINING=/opt/ml/input/data/training</span>
-<span class="ansi-blue-fg">SM_NUM_GPUS=1</span>
-<span class="ansi-blue-fg">SM_HPS={&#34;epochs&#34;:10,&#34;hidden_dim&#34;:500}</span>
-<span class="ansi-blue-fg">SM_HOSTS=[&#34;algo-1&#34;]</span>
-<span class="ansi-blue-fg">PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages</span>
-<span class="ansi-blue-fg">SM_NUM_CPUS=4</span>
-<span class="ansi-blue-fg">SM_MODEL_DIR=/opt/ml/model</span>
-<span class="ansi-blue-fg">SM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main</span>
-<span class="ansi-blue-fg">SM_OUTPUT_DATA_DIR=/opt/ml/output/data</span>
-<span class="ansi-blue-fg">SM_FRAMEWORK_PARAMS={}</span>
-<span class="ansi-blue-fg">SM_NETWORK_INTERFACE_NAME=eth0</span>
-<span class="ansi-blue-fg">SM_CURRENT_HOST=algo-1</span>
-<span class="ansi-blue-fg">SM_MODULE_DIR=s3://sagemaker-us-east-1-421776997111/sagemaker-pytorch-2021-04-29-17-37-26-653/source/sourcedir.tar.gz</span>
-<span class="ansi-blue-fg">SM_USER_ENTRY_POINT=train.py</span>
-<span class="ansi-blue-fg">SM_USER_ARGS=[&#34;--epochs&#34;,&#34;10&#34;,&#34;--hidden_dim&#34;,&#34;500&#34;]</span>
-<span class="ansi-blue-fg">SM_INPUT_DIR=/opt/ml/input</span>
-<span class="ansi-blue-fg">SM_HP_HIDDEN_DIM=500</span>
-<span class="ansi-blue-fg">SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate</span>
-<span class="ansi-blue-fg">SM_HP_EPOCHS=10</span>
-<span class="ansi-blue-fg">SM_LOG_LEVEL=20</span>
-<span class="ansi-blue-fg">SM_INPUT_DATA_CONFIG={&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}}</span>
 <span class="ansi-blue-fg">SM_RESOURCE_CONFIG={&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;}</span>
+<span class="ansi-blue-fg">SM_CURRENT_HOST=algo-1</span>
+<span class="ansi-blue-fg">SM_NETWORK_INTERFACE_NAME=eth0</span>
+<span class="ansi-blue-fg">SM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main</span>
 <span class="ansi-blue-fg">SM_INPUT_CONFIG_DIR=/opt/ml/input/config</span>
-<span class="ansi-blue-fg">SM_MODULE_NAME=train</span>
+<span class="ansi-blue-fg">SM_CHANNELS=[&#34;training&#34;]</span>
+<span class="ansi-blue-fg">PYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages</span>
+<span class="ansi-blue-fg">SM_CHANNEL_TRAINING=/opt/ml/input/data/training</span>
 <span class="ansi-blue-fg">SM_OUTPUT_DIR=/opt/ml/output</span>
-<span class="ansi-blue-fg">SM_TRAINING_ENV={&#34;additional_framework_parameters&#34;:{},&#34;channel_input_dirs&#34;:{&#34;training&#34;:&#34;/opt/ml/input/data/training&#34;},&#34;current_host&#34;:&#34;algo-1&#34;,&#34;framework_module&#34;:&#34;sagemaker_pytorch_container.training:main&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;hyperparameters&#34;:{&#34;epochs&#34;:10,&#34;hidden_dim&#34;:500},&#34;input_config_dir&#34;:&#34;/opt/ml/input/config&#34;,&#34;input_data_config&#34;:{&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}},&#34;input_dir&#34;:&#34;/opt/ml/input&#34;,&#34;job_name&#34;:&#34;sagemaker-pytorch-2021-04-29-17-37-26-653&#34;,&#34;log_level&#34;:20,&#34;model_dir&#34;:&#34;/opt/ml/model&#34;,&#34;module_dir&#34;:&#34;s3://sagemaker-us-east-1-421776997111/sagemaker-pytorch-2021-04-29-17-37-26-653/source/sourcedir.tar.gz&#34;,&#34;module_name&#34;:&#34;train&#34;,&#34;network_interface_name&#34;:&#34;eth0&#34;,&#34;num_cpus&#34;:4,&#34;num_gpus&#34;:1,&#34;output_data_dir&#34;:&#34;/opt/ml/output/data&#34;,&#34;output_dir&#34;:&#34;/opt/ml/output&#34;,&#34;output_intermediate_dir&#34;:&#34;/opt/ml/output/intermediate&#34;,&#34;resource_config&#34;:{&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;},&#34;user_entry_point&#34;:&#34;train.py&#34;}</span>
-<span class="ansi-blue-fg">SM_CHANNELS=[&#34;training&#34;]
+<span class="ansi-blue-fg">SM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate</span>
+<span class="ansi-blue-fg">SM_OUTPUT_DATA_DIR=/opt/ml/output/data</span>
+<span class="ansi-blue-fg">SM_TRAINING_ENV={&#34;additional_framework_parameters&#34;:{},&#34;channel_input_dirs&#34;:{&#34;training&#34;:&#34;/opt/ml/input/data/training&#34;},&#34;current_host&#34;:&#34;algo-1&#34;,&#34;framework_module&#34;:&#34;sagemaker_pytorch_container.training:main&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;hyperparameters&#34;:{&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200},&#34;input_config_dir&#34;:&#34;/opt/ml/input/config&#34;,&#34;input_data_config&#34;:{&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}},&#34;input_dir&#34;:&#34;/opt/ml/input&#34;,&#34;job_name&#34;:&#34;sagemaker-pytorch-2021-05-01-09-11-31-017&#34;,&#34;log_level&#34;:20,&#34;model_dir&#34;:&#34;/opt/ml/model&#34;,&#34;module_dir&#34;:&#34;s3://sagemaker-us-east-1-421776997111/sagemaker-pytorch-2021-05-01-09-11-31-017/source/sourcedir.tar.gz&#34;,&#34;module_name&#34;:&#34;train&#34;,&#34;network_interface_name&#34;:&#34;eth0&#34;,&#34;num_cpus&#34;:4,&#34;num_gpus&#34;:1,&#34;output_data_dir&#34;:&#34;/opt/ml/output/data&#34;,&#34;output_dir&#34;:&#34;/opt/ml/output&#34;,&#34;output_intermediate_dir&#34;:&#34;/opt/ml/output/intermediate&#34;,&#34;resource_config&#34;:{&#34;current_host&#34;:&#34;algo-1&#34;,&#34;hosts&#34;:[&#34;algo-1&#34;],&#34;network_interface_name&#34;:&#34;eth0&#34;},&#34;user_entry_point&#34;:&#34;train.py&#34;}</span>
+<span class="ansi-blue-fg">SM_FRAMEWORK_PARAMS={}</span>
+<span class="ansi-blue-fg">SM_USER_ARGS=[&#34;--epochs&#34;,&#34;10&#34;,&#34;--hidden_dim&#34;,&#34;200&#34;]</span>
+<span class="ansi-blue-fg">SM_HP_EPOCHS=10</span>
+<span class="ansi-blue-fg">SM_HPS={&#34;epochs&#34;:10,&#34;hidden_dim&#34;:200}</span>
+<span class="ansi-blue-fg">SM_NUM_GPUS=1</span>
+<span class="ansi-blue-fg">SM_LOG_LEVEL=20</span>
+<span class="ansi-blue-fg">SM_MODEL_DIR=/opt/ml/model</span>
+<span class="ansi-blue-fg">SM_INPUT_DIR=/opt/ml/input</span>
+<span class="ansi-blue-fg">SM_MODULE_NAME=train</span>
+<span class="ansi-blue-fg">SM_HP_HIDDEN_DIM=200</span>
+<span class="ansi-blue-fg">SM_MODULE_DIR=s3://sagemaker-us-east-1-421776997111/sagemaker-pytorch-2021-05-01-09-11-31-017/source/sourcedir.tar.gz</span>
+<span class="ansi-blue-fg">SM_USER_ENTRY_POINT=train.py</span>
+<span class="ansi-blue-fg">SM_INPUT_DATA_CONFIG={&#34;training&#34;:{&#34;RecordWrapperType&#34;:&#34;None&#34;,&#34;S3DistributionType&#34;:&#34;FullyReplicated&#34;,&#34;TrainingInputMode&#34;:&#34;File&#34;}}</span>
+<span class="ansi-blue-fg">SM_HOSTS=[&#34;algo-1&#34;]</span>
+<span class="ansi-blue-fg">SM_NUM_CPUS=4
 </span>
 <span class="ansi-blue-fg">Invoking script with the following command:
 </span>
-<span class="ansi-blue-fg">/usr/bin/python -m train --epochs 10 --hidden_dim 500
+<span class="ansi-blue-fg">/usr/bin/python -m train --epochs 10 --hidden_dim 200
 
 </span>
 <span class="ansi-blue-fg">Using device cuda.</span>
 <span class="ansi-blue-fg">Get train data loader.</span>
-<span class="ansi-blue-fg">Model loaded with embedding_dim 32, hidden_dim 500, vocab_size 5000.</span>
-<span class="ansi-blue-fg">Epoch: 1, BCELoss: 0.6821920324345024</span>
-<span class="ansi-blue-fg">Epoch: 2, BCELoss: 0.6306341533758202</span>
-<span class="ansi-blue-fg">Epoch: 3, BCELoss: 0.5479673378321589</span>
-<span class="ansi-blue-fg">Epoch: 4, BCELoss: 0.5303730210479425</span>
-<span class="ansi-blue-fg">Epoch: 5, BCELoss: 0.43383343791475104</span>
-<span class="ansi-blue-fg">Epoch: 6, BCELoss: 0.3876086284919661</span>
-<span class="ansi-blue-fg">Epoch: 7, BCELoss: 0.3522080231686028</span>
-<span class="ansi-blue-fg">Epoch: 8, BCELoss: 0.321516289394729</span>
-<span class="ansi-blue-fg">Epoch: 9, BCELoss: 0.30273181321669596</span>
-<span class="ansi-blue-fg">Epoch: 10, BCELoss: 0.3096260635220275</span>
-<span class="ansi-blue-fg">2021-04-29 17:52:08,681 sagemaker-containers INFO     Reporting training SUCCESS</span>
+<span class="ansi-blue-fg">Model loaded with embedding_dim 32, hidden_dim 200, vocab_size 5000.</span>
+<span class="ansi-blue-fg">Epoch: 1, BCELoss: 0.6699657269886562</span>
+<span class="ansi-blue-fg">Epoch: 2, BCELoss: 0.5735183467670363</span>
+<span class="ansi-blue-fg">Epoch: 3, BCELoss: 0.5155559157838627</span>
+<span class="ansi-blue-fg">Epoch: 4, BCELoss: 0.4316966332951371</span>
+<span class="ansi-blue-fg">Epoch: 5, BCELoss: 0.3779070334775107</span>
+<span class="ansi-blue-fg">Epoch: 6, BCELoss: 0.34646115193561633</span>
+<span class="ansi-blue-fg">Epoch: 7, BCELoss: 0.34423025591032846</span>
+<span class="ansi-blue-fg">Epoch: 8, BCELoss: 0.30566358414231515</span>
+<span class="ansi-blue-fg">Epoch: 9, BCELoss: 0.2750428179088904</span>
 
-2021-04-29 17:52:36 Uploading - Uploading generated training model
-2021-04-29 17:52:43 Completed - Training job completed
-Training seconds: 721
-Billable seconds: 721
+2021-05-01 09:19:32 Uploading - Uploading generated training model<span class="ansi-blue-fg">Epoch: 10, BCELoss: 0.2637371734088781</span>
+<span class="ansi-blue-fg">2021-05-01 09:19:30,122 sagemaker-containers INFO     Reporting training SUCCESS</span>
+
+2021-05-01 09:19:39 Completed - Training job completed
+Training seconds: 290
+Billable seconds: 290
 </pre>
 </div>
 </div>
@@ -14606,7 +14617,7 @@ Billable seconds: 721
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Deploy the trained model</span>
@@ -14639,7 +14650,7 @@ Billable seconds: 721
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>-----------------!</pre>
+<pre>--------------!</pre>
 </div>
 </div>
 
@@ -14657,7 +14668,7 @@ Billable seconds: 721
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_X_len</span><span class="p">),</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_X</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -14670,7 +14681,7 @@ Billable seconds: 721
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We split the data into chunks and send each chunk seperately, accumulating the results.</span>
@@ -14748,7 +14759,7 @@ Billable seconds: 721
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> While XGBoost algorithm is a tree based model that performs very well and can understand patterns in the data by optimizing the split of the data with rules based on similarity of each split, RNNs could reveal more complex patterns in the data and is able to perform better than XGBoost. However for this to happen we need to train our model in lots of data and for maybe a bigger number of epochs while optimizing the architecture of the RNN (more complex - more deep RNN may perform better on the dataset). For structured problems XGBoost performs very well and fast while it is easy to explain. In simple problems simpler models like XGBoost will perform better than neural networks.</p>
+<p><strong>Answer:</strong> While XGBoost algorithm is a tree based model that performs very well and can understand patterns in the data by optimizing the split of the data with rules based on similarity of each split, RNNs (LSTMs) are neural networks with a more complex architecture that could reveal more complex patterns in the data and is able to perform better than XGBoost. However for this to happen we need to train our model in lots of data and for maybe a bigger number of epochs while optimizing the architecture of the RNN (more complex - more deep RNN may perform better on the dataset). Also input features for XGBoost are Bags of words but for the LSTM model, it is Word embedding. For structured problems XGBoost performs very well and fast while it is easy to explain. In simple problems simpler models like XGBoost will perform better than neural networks.</p>
 
 </div>
 </div>
@@ -14763,7 +14774,7 @@ Billable seconds: 721
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_review</span> <span class="o">=</span> <span class="s1">&#39;The simplest pleasures in life are the best, and this film is one of them. Combining a rather basic storyline of love and adventure this movie transcends the usual weekend fair with wit and unmitigated charm.&#39;</span>
@@ -14791,11 +14802,20 @@ Billable seconds: 721
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Convert test_review into a form usable by the model and save the results in test_data</span>
-<span class="n">test_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">convert_and_pad</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">review_to_words</span><span class="p">(</span><span class="n">test_review</span><span class="p">))[</span><span class="mi">0</span><span class="p">])]</span>
+<span class="c1">#test_data = [np.array(convert_and_pad(word_dict, review_to_words(test_review))[0])]</span>
+<span class="c1">#print(test_data)</span>
+<span class="n">test_review_words</span> <span class="o">=</span> <span class="n">review_to_words</span><span class="p">(</span><span class="n">test_review</span><span class="p">)</span>     <span class="c1"># splits reviews to words</span>
+<span class="n">review_X</span><span class="p">,</span> <span class="n">review_len</span> <span class="o">=</span> <span class="n">convert_and_pad</span><span class="p">(</span><span class="n">word_dict</span><span class="p">,</span> <span class="n">test_review_words</span><span class="p">)</span>   <span class="c1"># pad review</span>
+
+<span class="n">data_pack</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">review_len</span><span class="p">,</span> <span class="n">review_X</span><span class="p">))</span>
+<span class="n">data_pack</span> <span class="o">=</span> <span class="n">data_pack</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">test_data</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">data_pack</span><span class="p">)</span>
+<span class="n">test_data</span> <span class="o">=</span> <span class="n">test_data</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
 </pre></div>
 
@@ -14813,52 +14833,48 @@ Billable seconds: 721
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[array([   1, 1375,   49,   53,    3,    4,  878,  173,  392,  682,   29,
-        723,    2, 4416,  275, 2078, 1060,  760,    1,  582,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-          0,    0,    0,    0,    0])]
+<pre>tensor([[  20,    1, 1375,   49,   53,    3,    4,  878,  173,  392,  682,   29,
+          723,    2, 4416,  275, 2078, 1060,  760,    1,  582,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+            0,    0,    0,    0,    0,    0,    0,    0,    0]])
 </pre>
 </div>
 </div>
@@ -14877,7 +14893,7 @@ Billable seconds: 721
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">predictor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
@@ -14893,13 +14909,13 @@ Billable seconds: 721
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array(0.5948831, dtype=float32)</pre>
+<pre>array(0.9118891, dtype=float32)</pre>
 </div>
 
 </div>
@@ -14926,7 +14942,7 @@ Billable seconds: 721
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">estimator</span><span class="o">.</span><span class="n">delete_endpoint</span><span class="p">()</span>
@@ -15482,7 +15498,7 @@ Starting  neg  files
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> I wrote "This movie was not good at all. The plot was nothing special!" and I got "Your review was NEGATIVE!"</p>
+<p><strong>Answer:</strong> I wrote "This movie was bad!" and I got "Your review was NEGATIVE!". <img src="data:image/png;base64,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BBBAAAEERkSA0GlEdgTdQAABBBBAAAEEEEAAAQQQQAABBLaSAKHTVtqbbAsCCCCAAAIIIIAAAggggAACCCAwIgKETiOyI+gGAggggAACCCCAAAIIIIAAAgggsJUECJ220t5kWxBAAAEEEEAAAQQQQAABBBBAAIERESB0GpEdQTcQQAABBBBAAAEEEEAAAQQQQACBrSRA6LSV9ibbggACCCCAAAIIIIAAAggggAACCIyIQLDQ6e7du/LVV1/J559/Lp999hn/YUANUAPUADVADVAD1AA1QA1QA9QANUANUAPUwAjVgMlsTHZjMpyN+BckdDKdNR3/93//d7lz5458++23/IcBNUANUAPUADVADVAD1AA1QA1QA9QANUANUAMjVAMmszHZjclwNiJ4ChI6mZTMdHp9fV3u3bsn//M//8N/GFAD1AA1QA1QA9QANUANUAPUADVADVAD1AA1MEI1YDIbk92YDMdkOW3/CxI6mYTsP//zP+X+/fvyt7/9re0+0z4CCCCAAAIIIIAAAggggAACCCCAQJ8CJrMx2Y3JcEyW0/a/IKGTmcPpv/7rvwic2t5btI8AAggggAACCCCAAAIIIIAAAggMIWCCJ5PhmCyn7X/BQidzSR3/EEAAAQQQQAABBBBAAAEEEEAAAQRGW8BkOIROo72P6B0CCCCAAAIIIIAAAggggAACCCAwdgKETmO3y+gwAggggAACCCCAAAIIIIAAAgggMPoChE6jv4/oIQIIIIAAAggggAACCCCAAAIIIDB2AoROY7fL6DACCCCAAAIIIIAAAggggAACCCAw+gKETqO/j+ghAggggAACCCCAAAIIIIAAAgggMHYChE5jt8voMAIIIIAAAggggAACCCCAAAIIIDD6Als+dPrTW4/JY4+V/TcnF/4icvuDOXnsuQtyu2R/xW289aeSV0fg23+5IHOP9bZlBHpT24XQnu7++5O8bfb3KO+vWiEWQAABBBBAAAEEEEAAAQQQQGD8BbZ86OTsotW3C8MlN7Rw3sGTFgQInVpApUkEEEAAAQQQQAABBBBAAAEERkyA0EnsSKe35e3nshFRcx9k457ckCQZSWNHT1WMqDHvm/vgT3Ihbbc3GiluL3m/Xo/IbbWsHq3T+767rEiv/dsiuZFOXjtlo7hMCPfY25KN4ept29urWZWaQC5db7x8ZlT03nRUWY3LY2+93RuRFDv4o7S8/j9mHLP9IaL3wZy8/ZYeqcZIp2zv8QgBBBBAAAEEEEAAAQQQQACBzRMgdLKh02OPSRq2xOFKFoRkoZMf/vjP3R3ZC5e8dnSA4oQ+SdCShjXu8/xoLBOuJG07oVO+T1n/3f71wpusf5KESlnAY9pKXvdM0uAn7q+/Tv+5u96eS5l377368rh42+22JoFT2sd42x9TI9gInVxtniGAAAIIIIAAAggggAACCCCwOQKETjZ0ckYD9YILG0JloU11mOLvwux9yStOyGS+p4Kj3GvijmBygiWROCCyfdavmXbs99MOqfWk3+s9MH20AU48qumtt2XOvt+0ax977zNPs+0b0iUZ4WX7kVuVv33O6Cw7Us3OyUXolPPjGwgggAACCCCAAAIIIIAAAghsggChU1+hUxL22EvrKgIZsy+zUCbZs7lAKAuD8iOZ4hay0UxeMKPDIn15XW9UkL4Ezj5WI5pUocXLp6OVzDKmT71L7uIQyrmszQZhtk11CWAcmiXfb+DiB0w5K+tnrZORToVOjiuhk9q9PEQAAQQQQAABBBBAAAEEEEBg0wQInfoNneyuikffJCFLekmcfbH3NRekOOGIWaaf0EmP6MneF69JjQQqDGXcbrnP4veakCkLm0y/zSivP72lgiq1vfkRYKpJtZy+RE4tkc1Fpb6preLHJmyy4VXd9jmuhE6KlYcIIIAAAggggAACCCCAAAIIbJoAodOgoZPdZfEIHz0Zt32hv5FOvfmUvHZU2BK3ap9/4F1CZ7//FzsSy2sn61LBI3Np3JxcMG0m4VlvhNMFeduGPtbIC9d0UJRruB8XZxSXF6iZhmu2zw3aCJ1y+4JvIIAAAggggAACCCCAAAIIILAJAoRONlBRAYudJDs/oic/d1FV8JJ7zRmRY/a2Dlh6bdvgJ72TnRP0JMuYUUD6+zqUsXfA069XBEBxL97qjdhKL3mLl8/mejLLuMFO8jztxwAu6cTgti0blPVCI2tv98Vj6fLeuuJtV6OiNuEgYpUIIIAAAggggAACCCCAAAIIIJAXIHQqCFRs0GGDDyc8siGHnWvICatcYOd95qXK0MksoEKlNNBx24zDH32nPfOyEzqZbySjfWwfvYm33Rbt6Ch1KV3yfrv9veXzfev1JQmL+nSZ++CCvJ32T6/b9sfOG2XnmdIhmN6+t+XCB3PZpXh223XolttgvoEAAggggAACCCCAAAIIIIAAAm0LTFbo1LYm7SOAAAIIIIAAAggggAACCCCAAAIIxAKEThQCAggggAACCCCAAAIIIIAAAggggEBwAUKn4KQ0iAACCCCAAAIIIIAAAggggAACCCBA6EQNIIAAAggggAACCCCAAAIIIIAAAggEFyB0Ck5KgwgggAACCCCAAAIIIIAAAggggAAChE7UAAIIIIAAAggggAACCCCAAAIIIIBAcAFCp+CkNIgAAggggAACCCCAAAIIIIAAAgggQOhEDSCAAAIIIIAAAggggAACCCCAAAIIBBcgdApOSoMIIIAAAggggAACCCCAAAIIIIAAAoRO1AACCCCAAAIIIIAAAggggAACCCCAQHABQqfgpDSIAAIIIIAAAggggAACCCCAAAIIIEDoRA0ggAACCCCAAAIIIIAAAggggAACCAQXIHQKTkqDCCCAAAIIIIAAAggggAACCCCAAAKETtQAAggggAACCCCAAAIIIIAAAggggEBwAUKn4KQ0iAACCCCAAAIIIIAAAggggAACCCBA6EQNIIAAAggggAACCCCAAAIIIIAAAggEFyB0Ck5KgwgggAACCCCAAAIIIIAAAggggAAChE7UAAIIIIAAAggggAACCCCAAAIIIIBAcAFCp+CkNIgAAggggAACCCCAAAIIIIAAAgggQOhEDSCAAAIIIIAAAggggAACCCCAAAIIBBcgdApOSoMIIIAAAggggAACCCCAAAIIIIAAAoRO1AACCCCAAAIIIIAAAggggAACCCCAQHABQqfgpDSIAAIIIIAAAggggAACCCCAAAIIIEDoRA0ggAACCCCAAAIIIIAAAggggAACCAQXIHQKTkqDCCCAAAIIIIAAAggggAACCCCAAAKETtQAAggggAACCCCAAAIIIIAAAggggEBwAUKn4KQ0iAACCCCAAAIIIIAAAggggAACCCBA6EQNIIAAAggggAACCCCAAAIIIIAAAggEFyB0Ck5KgwgggAACCCCAAAIIIIAAAggggAAChE7UAAIIIIAAAggggAACCCCAAAIIIIBAcAFCp+CkNIgAAggggAACCCCAAAIIIIAAAgggQOhEDSCAAAIIIIAAAggggAACCCCAAAIIBBcgdApOSoMIIIAAAggggAACCCCAAAIIIIAAAoRO1AACCCCAAAIIIIAAAggggAACCCCAQHABQqfgpDSIAAIIIIAAAggggAACCCCAAAIIIEDoRA0ggAACCCCAAAIIIIAAAggggAACCAQXIHQKTkqDCCCAAAIIIIAAAggggAACCCCAAAKETtQAAggggAACCCCAAAIIIIAAAggggEBwAUKn4KQ0iAACCCCAAAIIIIAAAggggAACCCBA6EQNIIAAAggggAACCCCAAAIIIIAAAggEFyB0Ck5KgwgggAACCCCAAAIIIIAAAggggAAChE7UAAIIIIAAAggggAACCCCAAAIIIIBAcAFCp+CkNIgAAggggAACCCCAAAIIIIAAAgggQOhEDSCAAAIIIIAAAggggAACCCCAAAIIBBcgdApOSoMIIIAAAggggAACCCCAAAIIIIAAAoRO1AACCCCAAAIIIIAAAggggAACCCCAQHABQqfgpDSIAAIIIIAAAggggAACCCCAAAIIIEDoRA0ggAACCCCAAAIIIIAAAggggAACCAQXIHQKTkqDCCCAAAIIIIAAAggggAACCCCAAAKETtQAAggggAACCCCAAAIIIIAAAggggEBwAUKn4KQ0iAACCCCAAAIIIIAAAggggAACCCBA6EQNIIAAAggggAACCCCAAAIIIIAAAggEFyB0Ck5KgwgggAACCCCAAAIIIIAAAggggAAChE7UAAIIIIAAAggggAACCCCAAAIIIIBAcAFCp+CkNIgAAggggAACCCCAAAIIIIAAAgggQOhEDSCAAAIIIIAAAggggAACCCCAAAIIBBcgdApOSoMIIIAAAggggAACCCCAAAIIIIAAAoRO1AACCCCAAAIIIIAAAggggAACCCCAQHABQqfgpDSIAAIIIIAAAggggAACCCCAAAIIIEDoRA0ggAACCCCAAAIIIIAAAggggAACCAQXIHQKTkqDCCCAAAIIIIAAAggggAACCCCAAAKETtQAAggggAACCCCAAAIIIIAAAggggEBwAUKn4KQ0iAACCCCAAAIIIIAAAggggAACCCBA6EQNIIAAAggggAACCCCAAAIIIIAAAggEFyB0Ck5KgwgggAACCCCAAAIIIIAAAggggAAChE7UAAIIIIAAAggggAACCCCAAAIIIIBAcAFCp+CkNIgAAggggAACCCCAAAIIIIAAAgggQOhEDSCAAAIIIIAAAggggAACCCCAAAIIBBcgdApOSoMIIIAAAggggAAC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AggggAACCCCAAAIItCFA6NSGKm0igAACCCCAAAIIIIAAAggggAACEy5A6DThBcDmI4AAAggggAACCCCAAAIIIIAAAm0IEDq1oUqbCCCAAAIIIIAAAggggAACCCCAwIQLEDpNeAGw+QgggAACCCCAAAIIIIAAAggggEAbAoRObajSJgIIIIAAAggggAACCCCAAAIIIDDhAoROE14AbD4CCCCAAAIIIIAAAggggAACCCDQhgChUxuqtIkAAggggAACCCCAAAIIIIAAAghMuACh04QXAJuPAAIIIIAAAggggAACCCCAAAIItCFA6NSGKm0igAACCCCAAAIIIIAAAggggAACEy5A6DThBcDmI4AAAggggAACCCCAAAIIIIAAAm0IEDq1oUqbCCCAAAIIIIAAAggggAACCCCAwIQLEDpNeAGw+QgggAACCCCAAAIIIIAAAggggEAbAoRObajSJgIIIIAAAggggAACCCCAAAIIIDDhAoROE14AbD4CCCCAAAIIIIAAAggggAACCCDQhgChUxuqtIkAAggggAACCCCAAAIIIIAAAghMuACh04QXAJuPAAIIIIAAAggggAACCCCAAAIItCFA6NSGKm0igAACCCCAAAIIIIAAAggggAACEy5A6DThBcDmI4AAAggggAACCCCAAAIIIIAAAm0IEDq1oUqbCCCAAAIIIIAAAggggAACCCCAwIQLEDpNeAGw+QgggAACCCCAAAIIIIAAAggggEAbAoRObajSJgIIIIAAAggggAACCCCAAAIIIDDhAoROE14AbD4CCCCAAAIIIIAAAggggAACCCDQhgChUxuqtIkAAggggAACCCCAAAIIIIAAAghMuACh04QXAJuPAAIIIIAAAggggAACCCCAAAIItCFA6NSGKm0igAACCCCAAAIIIIAAAggggAACEy5A6DThBcDmI4AAAggggAACCCCAAAIIIIAAAm0IEDq1oUqbCCCAAAIIIIAAAggggAACCCCAwIQLEDpNeAGw+QgggAACCCCAAAIIIIAAAggggEAbAoRObajSJgIIIIAAAggggAACCCCAAAIIIDDhAoROE14AbD4CCCCAAAIIIIAAAggggAACCCDQhgChUxuqtIkAAggggAACCCCAAAIIIIAAAghMuACh04QXAJuPAAIIIIAAAggggAACCCCAAAIItCFA6NSGKm0igAACCCCAAAIIIIAAAggggAACEy5A6DThBcDmI4AAAggggAACCCCAAAIIIIAAAm0IEDq1oUqbCCCAAAIIIIAAAggggAACCCCAwIQLEDpNeAGw+QgggAACCCCAAAIIIIAAAggggEAbAoRObajSJgIIIIAAAggggAACCCCAAAIIIDDhAoROE14AbD4CCCCAAAIIIIAAAggggAACCCDQhgChUxuqtIkAAggggAACCCCAAAIIIIAAAghMuACh04QXAJuPAAL/rx07pgEAAEAY5t81KnZRAyQ0XBAgQIAAAQIECBAgQIAAgULA6VSoyiRAgAABAgQIECBAgAABAgQInAs4nc4HoD4BAgQIECBAgAABAgQIECBAoBBwOhWqMgkQIECAAAECBAgQIECAAAEC5wJOp/MBqE+AAAECBAgQIECAAAECBAgQKAScToWqTAIECBAgQIAAAQIECBAgQIDAuYDT6XwA6hMgQIAAAQIECBAgQIAAAQIECgGnU6EqkwABAgQIECBAgAABAgQIECBwLuB0Oh+A+gQIECBAgAABAgQIECBAgACBQsDpVKjKJECAAAECBAgQIECAAAECBAicCzidzgegPgECBAgQIECAAAECBAgQIECgEHA6FaoyCRAgQIAAAQIECBAgQIAAAQLnAk6n8wGoT4AAAQIECBAgQIAAAQIECBAoBJxOhapMAgQIECBAgAABAgQIECBAgMC5gNPpfADqEyBAgAABAgQIECBAgAABAgQKAadToSqTAAECBAgQIECAAAECBAgQIHAu4HQ6H4D6BAgQIECAAAECBAgQIECAAIFCwOlUqMokQIAAAQIECBAgQIAAAQIECJwLOJ3OB6A+AQIECBAgQIAAAQIECBAgQKAQcDoVqjIJECBAgAABAgQIECBAgAABAucCTqfzAahPgAABAgQIECBAgAABAgQIECgEnE6FqkwCBAgQIECAAAECBAgQIECAwLmA0+l8AOoTIECAAAECBAgQIECAAAECBAoBp1OhKpMAAQIECBAgQIAAAQIECBAgcC7gdDofgPoECBAgQIAAAQIECBAgQIAAgULA6VSoyiRAgAABAgQIECBAgAABAgQInAs4nc4HoD4BAgQIECBAgAABAgQIECBAoBBwOhWqMgkQIECAAAECBAgQIECAAAEC5wJOp/MBqE+AAAECBAgQIECAAAECBAgQKAScToWqTAIECBAgQIAAAQIECBAgQIDAuYDT6XwA6hMgQIAAAQIECBAgQIAAAQIECgGnU6EqkwABAgQIECBAgAABAgQIECBwLuB0Oh+A+gQIECBAgAABAgQIECBAgACBQsDpVKjKJECAAAECBAgQIECAAAECBAicCzidzgegPgECBAgQIECAAAECBAgQIECgEHA6FaoyCRAgQIAAAQIECBAgQIAAAQLnAk6n8wGoT4AAAQIECBAgQIAAAQIECBAoBJxOhapMAgQIECBAgAABAgQIECBAgMC5gNPpfADqEyBAgAABAgQIECBAgAABAgQKAadToSqTAAECBAgQIECAAAECBAgQIHAu4HQ6H4D6BAgQIECAAAECBAgQIECAAIFCwOlUqMokQIAAAQIECBAgQIAAAQIECJwLOJ3OB6A+AQIECBAgQIAAAQIECBAgQKAQcDoVqjIJECBAgAABAgQIECBAgAABAucCTqfzAahPgAABAgQIECBAgAABAgQIECgEnE6FqkwCBAgQIECAAAECBAgQIECAwLmA0+l8AOoTIECAAAECBAgQIECAAAECBAoBp1OhKpMAAQIECBAgQIAAAQIECBAgcC7gdDofgPoECBAgQIAAAQIECBAgQIAAgULA6VSoyiRAgAABAgQIECBAgAABAgQInAs4nc4HoD4BAgQIECBAgAABAgQIECBAoBBwOhWqMgkQIECAAAECBAgQIECAAAEC5wJOp/MBqE+AAAECBAgQIECAAAECBAgQKAScToWqTAIECBAgQIAAAQIECBAgQIDAuYDT6XwA6hMgQIAAAQIECBAgQIAAAQIECgGnU6EqkwABAgQIECBAgAABAgQIECBwLuB0Oh+A+gQIECBAgAABAgQIECBAgACBQsDpVKjKJECAAAECBAgQIECAAAECBAicCzidzgegPgECBAgQIECAAAECBAgQIECgEHA6FaoyCRAgQIAAAQIECBAgQIAAAQLnAk6n8wGoT4AAAQIECBAgQIAAAQIECBAoBJxOhapMAgQIECBAgAABAgQIECBAgMC5gNPpfADqEyBAgAABAgQIECBAgAABAgQKAadToSqTAAECBAgQIECAAAECBAgQIHAu4HQ6H4D6BAgQIECAAAECBAgQIECAAIFCwOlUqMokQIAAAQIECBAgQIAAAQIECJwLOJ3OB6A+AQIECBAgQIAAAQIECBAgQKAQcDoVqjIJECBAgAABAgQIECBAgAABAucCTqfzAahPgAABAgQIECBAgAABAgQIECgEnE6FqkwCBAgQIECAAAECBAgQIECAwLmA0+l8AOoTIECAAAECBAgQIECAAAECBAoBp1OhKpMAAQIECBAgQIAAAQIECBAgcC7gdDofgPoECBAgQIAAAQIECBAgQIAAgULA6VSoyiRAgAABAgQIECBAgAABAgQInAs4nc4HoD4BAgQIECBAgAABAgQIECBAoBBwOhWqMgkQIECAAAECBAgQIECAAAEC5wJOp/MBqE+AAAECBAgQIECAAAECBAgQKAScToWqTAIECBAgQIAAAQIECBAgQIDAuYDT6XwA6hMgQIAAAQIECBAgQIAAAQIECgGnU6EqkwABAgQIECBAgAABAgQIECBwLuB0Oh+A+gQIECBAgAABAgQIECBAgACBQsDpVKjKJECAAAECBAgQIECAAAECBAicCzidzgegPgECBAgQIECAAAECBAgQIECgEHA6FaoyCRAgQIAAAQIECBAgQIAAAQLnAk6n8wGoT4AAAQIECBAgQIAAAQIECBAoBJxOhapMAgQIECBAgAABAgQIECBAgMC5gNPpfADqEyBAgAABAgQIECBAgAABAgQKAadToSqTAAECBAgQIECAAAECBAgQIHAu4HQ6H4D6BAgQIECAAAECBAgQIECAAIFCwOlUqMokQIAAAQIECBAgQIAAAQIECJwLOJ3OB6A+AQIECBAgQIAAAQIECBAgQKAQcDoVqjIJECBAgAABAgQIECBAgAABAucCTqfzAahPgAABAgQIECBAgAABAgQIECgEnE6FqkwCBAgQIECAAAECBAgQIECAwLmA0+l8AOoTIECAAAECBAgQIECAAAECBAoBp1OhKpMAAQIECBAgQIAAAQIECBAgcC7gdDofgPoECBAgQIAAAQIECBAgQIAAgULA6VSoyiRAgAABAgQIECBAgAABAgQInAs4nc4HoD4BAgQIECBAgAABAgQIECBAoBBwOhWqMgkQIECAAAECBAgQIECAAAEC5wJOp/MBqE+AAAECBAgQIECAAAECBAgQKAScToWqTAIECBAgQIAAAQIECBAgQIDAuYDT6XwA6hMgQIAAAQIECBAgQIAAAQIECgGnU6EqkwABAgQIECBAgAABAgQIECBwLuB0Oh+A+gQIECBAgAABAgQIECBAgACBQmA2Vc0FkUp02gAAAABJRU5ErkJggg==" alt="image-2.png"></p>
 
 </div>
 </div>
